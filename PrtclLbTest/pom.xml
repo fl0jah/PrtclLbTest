@@ -1,0 +1,56 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fattied.fl0jah</groupId>
+  <artifactId>PrtclLbTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>PrtclLbtest</name>
+  <description>Testing Packet Read/Write with ProtocolLib</description>
+  
+  <properties>
+  	<mainClass>com.fattied.fl0jah.main.Main</mainClass>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <repositories>
+  	<repository>
+  		<id>spigot-repo</id>
+  		<url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+  	</repository>
+  	
+  	<repository>
+  		<id>dmully2-repo</id>
+  		<url>https://repo.dmulloy2.net/repository/public/</url>
+  	</repository>
+  </repositories>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.spigotmc</groupId>
+  		<artifactId>spigot-api</artifactId>
+  		<version>1.21.4-R0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>com.comphenix.protocol</groupId>
+  		<artifactId>ProtocolLib</artifactId>
+  		<version>5.3.0</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+  	<sourceDirectory>src/main/java</sourceDirectory>
+  	<defaultGoal>clean package</defaultGoal>
+  	<resources>
+  		<resource>
+  			<directory>src/main/resources</directory>
+  			<filtering>true</filtering>
+  			<includes>
+  				<include>plugin.yml</include>
+  			</includes>
+  		</resource>
+  	</resources>
+  </build>
+</project>

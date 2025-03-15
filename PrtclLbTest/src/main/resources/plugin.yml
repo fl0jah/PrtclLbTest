@@ -1,0 +1,5 @@
+name: ${name}
+main: ${mainClass}
+version: ${version}
+description: ${description}
+depend: [ProtocolLib]
